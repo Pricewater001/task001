@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .dropdown li + li {
+        margin-top: 15px;
+      }
+      .dropdown li {
+        padding: 0.5em 1em;
+        text-align: center;
+      }
+    </style>
+    <title>PwC Cafe</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="navbar">
+        <div class="logo" style="font-size: 2rem">PwC Cafe</div>
+        <ul class="navItem">
+          <input type="checkbox" name="toggle" id="toggle" />
+          <label for="toggle" class="humburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About US</a></li>
+            <li class="listmenu">
+              <a href="/">menu</a>
+              <ul class="dropdown">
+                <li><a href="/">One</a></li>
+                <li><a href="/">Two</a></li>
+                <li><a href="/">Three Three</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Contact Us</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="container-title">
+        <h1 class="header-title">“May Your Sunday be short.” <span>By hasan</span></h1>
+
+        <h5 class="header-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          quisquam suscipit sit mollitia ipsumdeserunt odit adipisci doloremque!
+        </h5>
+        <div class="social-media">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <about>
+          <h1 style="padding: 1rem;">About Us</h1>
+          <h5 style="padding: 1rem;">short Description to be here </h5>
+          <div>
+            <img src="./assests/Cappuccino.jpg" alt="" srcset="" width="300px" >
+            <img src="./assests/tea.jpg" alt="" srcset="" width="300px"  >
+            <img src="./assests/coffee.JPG" alt="" srcset="" width="300px" >
+            <img src="./assests/" alt="" srcset="" width="300px" >
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum suscipit quos ab quae dolorum debitis quia. Minus tempora, optio, dolorem reiciendis ipsum corrupti, doloremque deleniti facilis nulla eligendi commodi.</p>
+      </about>
+      <contactus class="contact-us-container">
+          <div class="leftSide">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna </p>
+            <a href="">abedalqaderhassan@gmail.com</a>
+            <a href="">0789058158</a>
+          </div>
+          <div class="rightside">
+            <form action="post">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+             <button type="submit">Submit</button>
+            </form>
+          </div>
+      </contactus>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="upsider">
+          <ul>
+            <li style="color: white; cursor: pointer;"><div class="logo" style="font-size: 2rem" >PwC Cafe</div></li>
+            <li>Logo Description</li>
+          </ul>
+          <ul class="footer-list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ul>
+          <ul class="footer-list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ul>
+          <ul class="footer-list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+          </ul>
+          <ul class="footer-list">
+            <li>Contact US</li>
+            <li>About US</li>
+            <li>Home</li>
+          </ul>
+        </div>
+        <hr class="footer-divider" />
+        <div class="social-media">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <!-- <h3>Copyright</h3> -->
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
