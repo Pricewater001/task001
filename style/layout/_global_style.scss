@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  min-width:320px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input[type="checkbox"] {
+    display: none;
+  }
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(255, 213, 0);
+}

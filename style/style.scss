@@ -1,0 +1,74 @@
+@import "./helpers/mixins";
+@import "./_style_vars";
+@import "./_header";
+@import "./main";
+@import "./footer";
+@import "./layout/global_style";
+
+
+.menu {
+        @extend %r-flex;
+        gap: 2rem;
+        font-size: 18px;
+        li {
+          padding: 5px 14px;
+          &:hover {
+            background-color: #e7b424;
+            border-radius: 5px;
+            transition: 0.5s ease;
+            @include breakpoints(mobile) {
+              margin-top: 12px;
+            }
+          }
+        }
+        .listmenu {
+          position: relative;
+          .dropdown {
+            background-color: rgb(182, 64, 3);
+            padding: 1em 0;
+            position: absolute;
+            width: 8rem;
+            display: none;
+            border-radius: 8px;
+            top: 2rem;
+            @include breakpoints(mobile) {
+              left: 50%;
+              top: 30px;
+              transform: translateX(35%);
+            }
+          }
+          &:hover {
+            .dropdown {
+              display: block;
+              @include breakpoints(mobile) {
+                display: block;
+            }
+            }
+          }
+        }
+        /* @include breakpoints(mobile) {
+         
+          position: absolute;
+          background-color: $Basic-color;
+          right: 0;
+          left: 0;
+          text-align: center;
+          padding: 16px 0;
+          display: none;
+        } */
+    }
+
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #cd5204;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+}

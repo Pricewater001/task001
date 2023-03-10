@@ -1,0 +1,57 @@
+%r-flex {
+  display: flex;
+}
+%c-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: $Basic-color;
+  height: 100%;
+  padding: 2rem;
+  color: white;
+  .footer-container {
+    @extend %c-flex;
+    height: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+    .upsider {
+      @extend %r-flex;
+      justify-content: space-between;
+      .footer-list {
+        text-transform: uppercase;
+        padding: 2rem 0rem;
+        li {
+          padding: 4px;
+          cursor: pointer;
+          &:hover {
+            color: rgb(218, 197, 197);
+          }
+        }
+      }
+      @include breakpoints(mobile) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .social-media {
+      @extend %r-flex;
+      justify-content: center;
+      color: white;
+      @include breakpoints(mobile) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+      }
+    }
+    .social-media > a {
+      color: white;
+      padding: 1rem;
+    }
+  }
+  @include breakpoints(mobile) {
+    height: 100%;
+  }
+}

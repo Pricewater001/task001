@@ -1,0 +1,65 @@
+header {
+  background: url("../assests/headerimg2.jpg");
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+  position: relative;
+
+  #navbar {
+    @extend %r-flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $Basic-color;
+    color: white;
+    .navItem {
+      a {
+        color: #fff;
+      }
+      .humburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+        @include breakpoints(mobile) {
+          display: block;
+        }
+      }
+   
+    }
+  }
+  .container-title {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    .header-title {
+      font-size: 2vw;
+      color: #6f4e37;
+      text-transform: uppercase;
+      span {
+        font-size: 2vw;
+        color: #6f4e37;
+        text-transform: lowercase;
+      }
+      @include breakpoints(mobile) {
+        width: 5rem;
+            }
+    }
+    .header-description {
+      margin-top: 1rem;
+      color: #6f4e37;
+      font-size: 2vw;
+      max-width: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      @include breakpoints(mobile) {
+        width: 5rem;
+            }
+    }
+    .social-media {
+      a {
+        color: #6f4e37;
+        padding: 1rem;
+      }
+    }
+  }
+}
