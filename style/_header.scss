@@ -4,6 +4,10 @@ header {
   height: 30rem;
   width: 100%;
   position: relative;
+  @include breakpoints(mobile) {
+    background: url("../assests/headerimgmobo.jpg");
+    background-size: cover;
+    }
 
   #navbar {
     @extend %r-flex;

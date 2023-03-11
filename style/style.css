@@ -5,6 +5,12 @@ header {
   width: 100%;
   position: relative;
 }
+@media (max-width: 767px) {
+  header {
+    background: url("../assests/headerimgmobo.jpg");
+    background-size: cover;
+  }
+}
 header #navbar {
   justify-content: space-between;
   padding: 1rem;
@@ -143,11 +149,39 @@ about p {
   }
 }
 
+store .store-container {
+  background: #FBFAFA;
+}
+store .store-container .content-box {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  store .store-container .content-box {
+    flex-direction: column;
+  }
+}
+store .store-container .content-box img {
+  border-radius: 5px;
+}
+store .store-container .content-box .content-discription {
+  padding: 4px;
+  margin: 1rem;
+  align-items: start;
+}
+store .store-container .content-box .content-discription p {
+  margin-top: 1rem;
+  width: 50vw;
+  color: black;
+}
+
 .menu, footer .footer-container .social-media, footer .footer-container .upsider, header #navbar, .contact-us-container {
   display: flex;
 }
 
-footer .footer-container, about, .contact-us-container .leftSide, .contact-us-container .rightside form {
+footer .footer-container, about, .contact-us-container .leftSide, .contact-us-container .rightside form, store .store-container .content-box .content-discription {
   display: flex;
   flex-direction: column;
 }
@@ -211,7 +245,7 @@ footer .footer-container .social-media > a {
 }
 
 body {
-  min-width: 320px;
+  min-width: 346px;
 }
 
 li {
