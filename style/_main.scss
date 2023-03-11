@@ -44,8 +44,8 @@ about {
 
   .rightside {
     width: 80vh;
-    @include breakpoints(mobile){
-        width: 20vh;
+    @include breakpoints(mobile) {
+      width: 20vh;
     }
     form {
       @extend %c-flex;
@@ -69,13 +69,44 @@ about {
         border-radius: 4px;
         cursor: pointer;
       }
-      @include breakpoints(mobile){
+      @include breakpoints(mobile) {
         width: 18vh;
       }
     }
   }
-  @include breakpoints(mobile){
+  @include breakpoints(mobile) {
     flex-direction: column;
     padding: 1rem 1rem;
+  }
+}
+
+store {
+  .store-container {
+    background: #FBFAFA;
+;
+    .content-box{
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        @include breakpoints(mobile) {
+        flex-direction: column;
+         }
+        img{
+            border-radius: 5px;
+        }
+        .content-discription{
+            padding: 4px;
+            margin: 1rem;
+            @extend %c-flex;
+            align-items: start;
+            p{
+                margin-top: 1rem;
+                width: 50vw;
+                color: black;
+            }
+        }
     }
+
+  }
 }
