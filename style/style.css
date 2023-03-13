@@ -1,3 +1,35 @@
+.feedback-div {
+  background-color: gray;
+  min-height: 250px;
+  /* position: relative; */
+}
+.feedback-div form {
+  padding: 1rem;
+}
+.feedback-div form input {
+  width: 50%;
+}
+.feedback-div form button {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+.feedback-div .feedback-list ul {
+  background-color: rgb(217, 228, 244);
+  padding: 1rem;
+}
+.feedback-div .feedback-list ul li:nth-child(odd) {
+  background: rgb(238, 207, 144);
+  color: green;
+  padding: 1rem;
+}
+.feedback-div .feedback-list ul li:nth-child(even) {
+  background: rgb(172, 146, 93);
+  color: green;
+  padding: 1rem;
+}
+
 header {
   background: url("../assests/headerimg2.jpg");
   background-size: cover;
@@ -188,7 +220,7 @@ footer .footer-container, about, .contact-us-container .leftSide, .contact-us-co
 
 footer {
   background-color: #cd5204;
-  height: 100%;
+  height: 253px;
   padding: 2rem;
   color: white;
 }

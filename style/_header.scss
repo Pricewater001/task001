@@ -7,7 +7,7 @@ header {
   @include breakpoints(mobile) {
     background: url("../assests/headerimgmobo.jpg");
     background-size: cover;
-    }
+  }
 
   #navbar {
     @extend %r-flex;

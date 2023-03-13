@@ -1,0 +1,34 @@
+.feedback-div {
+  background-color: gray;
+  min-height: 250px;
+  /* position: relative; */
+  form {
+    padding: 1rem;
+    input {
+      width: 50%;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 5px;
+      border-radius: 8px;
+    }
+  }
+  .feedback-list {
+    ul {
+      background-color: rgb(217, 228, 244);
+      padding: 1rem;
+  
+      li:nth-child(odd) {
+        background: rgb(238, 207, 144);
+        color: green;
+        padding: 1rem;
+      }
+      li:nth-child(even) {
+        background: rgb(172, 146, 93);
+        color: green;
+        padding: 1rem;
+      }
+    }
+  }
+}
