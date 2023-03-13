@@ -1,11 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-
 }
-body{
-  min-width:346px;
-  
+body {
+  min-width: 346px;
 }
 
 li {
@@ -15,8 +13,8 @@ a {
   text-decoration: none;
 }
 input[type="checkbox"] {
-    display: none;
-  }
+  display: none;
+}
 input {
   padding: 0.5rem;
   border-radius: 0.5rem;
