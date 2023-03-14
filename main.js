@@ -49,11 +49,13 @@ const feedBack = new FeedBacks();
 function checkDuplicate(value) {
   let bool = true;
   const localStorageList = JSON.parse(localStorage.getItem("list"));
-  for (let i = 0; i < localStorageList.length; i++) {
-    if (localStorageList[i].feedback == value) {
-      bool = false;
-      break;
-    }
+  if(localStorageList){
+      for (let i = 0; i < localStorageList.length; i++) {
+        if (localStorageList[i].feedback == value) {
+          bool = false;
+          break;
+        }
+      }
   }
   return bool;
 }
@@ -72,6 +74,11 @@ FeedBacks.prototype.SaveFeedBack = function () {
       id: Date.now(),
       feedback: this.feedBack,
     });
+  }else{
+    this.list.push({
+        id: Date.now(),
+        feedback: this.feedBack,
+      });
   }
   localStorage.setItem("list", JSON.stringify(this.list));
 };
